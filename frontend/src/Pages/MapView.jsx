@@ -29,7 +29,7 @@ const MapView = () => {
   useEffect(() => {
     const fetchCoordinates = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/geodata/list');
+        const response = await axios.get(' ');
         const userid = localStorage.getItem("userId");
         const data = response.data
           .filter((e) => e.user_id === userid)
