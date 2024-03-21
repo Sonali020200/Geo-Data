@@ -38,11 +38,11 @@ To get started with the application, follow these steps:
 
 ## Backend
 
-The backend of the application is developed using the Go programming language. It includes APIs for user authentication, account management, file upload, and shape management. PostgreSQL is used as the database to store user data and geospatial information. Refer to the backend README.md file for more details on setting up and running the backend.
+The backend of the application is developed using the Go programming language. It includes APIs for user authentication, account management, file upload, and shape management. PostgreSQL is used as the database to store user data and geospatial information. 
 
 ## Frontend
 
-The frontend of the application is developed using React. It provides a user-friendly interface for uploading and managing GeoJSON/KML files, rendering maps, drawing custom shapes, and editing shapes. React Leaflet library is integrated to render maps and display uploaded files. Refer to the frontend README.md file for more details on setting up and running the frontend.
+The frontend of the application is developed using React. It provides a user-friendly interface for uploading and managing GeoJSON/KML files, rendering maps, drawing custom shapes, and editing shapes. React Leaflet library is integrated to render maps and display uploaded files.
 
 ## Deployment
 
