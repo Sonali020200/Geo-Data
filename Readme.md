@@ -27,10 +27,12 @@ To get started with the application, follow these steps:
 
 1. Clone the repository: `git clone <repository-url>`
 2. Navigate to the backend directory: `cd backend`
-3. Set up the backend environment and database according to the instructions provided in the backend README.md file.
+3. Set up the backend environment and database 
+    go get .
+    go run main.go
 4. Navigate to the frontend directory: `cd frontend`
 5. Install dependencies: `npm install`
-6. Start the frontend server: `npm start`
+6. Start the frontend server: `npm run dev`
 
 
 
