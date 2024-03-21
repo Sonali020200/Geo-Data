@@ -17,12 +17,12 @@ const Register = () => {
     try {
       const response = await axios.post('http://localhost:8080/register', formData);
       console.log(response.data);
-      alert("Registration successful.")
+      alert("Registration successful!")
       setFormData({ fullname: '', email: '', password: '' });
       navigate('/login');
     } catch (error) {
       console.error("Error:", error.response.data);
-      alert("Registration failed. Please check your credentials and try again.");
+      alert("Registration failed!");
     }
   };
 
