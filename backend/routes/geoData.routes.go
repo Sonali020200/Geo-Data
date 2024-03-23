@@ -3,9 +3,10 @@ package routes
 import (
 	"encoding/json"
 	"geo-data/models"
-	"gorm.io/gorm"
 	"io/ioutil"
 	"net/http"
+
+	"gorm.io/gorm"
 )
 
 func CreateGeoData(db *gorm.DB) http.HandlerFunc {
@@ -46,8 +47,11 @@ func CreateGeoData(db *gorm.DB) http.HandlerFunc {
 			return
 		}
 
+		filePath := r.FormValue("file_path")
+
 		geoData := models.GeoData{
 			UserID:   userID,
+			FilePath: filePath,
 			Geometry: string(geometry),
 			Title:    title,
 		}

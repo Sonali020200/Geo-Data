@@ -2,6 +2,7 @@ package config
 
 import (
 	"fmt"
+	"geo-data/models"
 	"os"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -21,5 +22,14 @@ func ConnectDB() (*gorm.DB, error) {
 		fmt.Println("Failed to connect to database:", err)
 		return nil, err
 	}
+
+	err = db.AutoMigrate(&models.GeoData{}, &models.User{}, &models.Shape{})
+	if err != nil {
+		fmt.Println("Failed to auto migrate models:", err)
+		return nil, err
+	}
+
+	fmt.Println("Auto migration successful.")
+	
 	return db, nil
 }

@@ -12,7 +12,7 @@ This is a fullstack web application that allows users to manage and visualize ge
 
 ## Technical Overview
 
-- **Frontend**: Developed using React/Next.js.
+- **Frontend**: Developed using React.
 - **Backend**: Developed using the Go programming language.
 - **Database**: PostgreSQL is used to store user data and geospatial information.
 - **User Authentication**: Implemented using JWT (JSON Web Tokens).

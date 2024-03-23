@@ -30,8 +30,8 @@ const Navbar = () => {
             <img className='logo' src={logo} alt="logo" />
             <nav className={`navbar ${isOpen ? "showMenu" : ""}`}>
                 <Link to="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={closeMenu}>Home</Link>
-                <Link to="/mapView" className={`nav-link ${pathname === '/mapView' ? 'active' : ''}`} onClick={closeMenu}>Map View</Link>
                 <Link to="/upload" className={`nav-link ${pathname === '/upload' ? 'active' : ''}`} onClick={closeMenu}>Upload</Link>
+                <Link to="/mapView" className={`nav-link ${pathname === '/mapView' ? 'active' : ''}`} onClick={closeMenu}>Map</Link>
 
                 {isLoggedIn ? (
                     <div className="login-register-in" onClick={handleLogout}>
