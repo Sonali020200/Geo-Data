@@ -63,8 +63,8 @@ const Navbar = () => {
             <nav className={`sm:hidden ${isOpen ? "block" : "hidden"}`}>
                 <div className="px-2 pt-2 pb-4 space-y-2">
                     <Link to="/" className={`text-white font-semibold ${pathname === '/' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Home</Link>
-                    <Link to="/mapView" className={`text-white font-semibold ${pathname === '/mapView' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Map</Link>
                     <Link to="/upload" className={`text-white font-semibold ${pathname === '/upload' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Upload</Link>
+                    <Link to="/mapView" className={`text-white font-semibold ${pathname === '/mapView' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Map</Link>
                     <Link to="/about" className={`text-white font-semibold ${pathname === '/about' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>About</Link>
                     <div className="px-2 pt-2 pb-4">
                         {isLoggedIn ? (
