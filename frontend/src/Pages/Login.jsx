@@ -16,7 +16,7 @@ const Login = () => {
       alert("Logged in successfully. Welcome back!");
       navigate('/');
     } catch (error) {
-      alert("An error occurred. Could not log in. Please try again.");
+      alert("Please try again!");
     }
   };
 
