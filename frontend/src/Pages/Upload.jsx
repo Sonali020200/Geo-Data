@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../Styles/upload.css';
 
 const Upload = () => {
   const [file, setFile] = useState(null);
@@ -16,7 +15,6 @@ const Upload = () => {
     }
     fetchGeoData(storedUserId);
   }, []);
-
 
   const fetchGeoData = async (id) => {
     const baseURL = `http://localhost:8080/geodata/user?user_id=${id}`;
@@ -55,7 +53,6 @@ const Upload = () => {
       fetchGeoData();
       setFile(null);
       setTitle("");
-
     } catch (error) {
       console.error('Error uploading file:', error);
       alert('Error uploading file');
@@ -64,24 +61,25 @@ const Upload = () => {
 
   return (
     <>
-      <div className="upload">
-        <h2>Upload a .geojson File</h2>
-        <form onSubmit={handleSubmit}>
+      <div className="max-w-xl mx-auto my-24 p-6 bg-gray-300 rounded-lg shadow-md">
+      <h1 className="text-2xl text-center font-bold">Upload a .geojson File</h1><br />
+        <form className="flex flex-col gap-4 text-black mb-8" onSubmit={handleSubmit}>
           <input type="text" placeholder="Title" value={title} onChange={handleTitleChange} />
           <input type="file" accept=".geojson" onChange={handleFileChange} />
-          <button className="btn btn1" type="submit">Upload</button>
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300" type="submit">Upload</button>
         </form>
       </div>
-      <table>
+      <table className="w-5/6 mx-auto mt-8 border-collapse">
         <thead>
           <tr>
-            <th>Title</th>
+            <th className="bg-gray-900 text-white px-4 py-2">Title</th>
           </tr>
         </thead>
         <tbody>
           {geoDataList.map((data) => (
             <tr key={data.id}>
-              <td>{data.title}</td>
+          <td className="bg-gray-300 text-gray-700 px-4 py-2">{data.title}</td>
+
             </tr>
           ))}
         </tbody>

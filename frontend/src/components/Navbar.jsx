@@ -34,6 +34,7 @@ const Navbar = () => {
                     <Link to="/" className={`text-white font-semibold ${pathname === '/' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>Home</Link>
                     <Link to="/upload" className={`text-white font-semibold ${pathname === '/upload' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>Upload</Link>
                     <Link to="/mapView" className={`text-white font-semibold ${pathname === '/mapView' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>Map</Link>
+                    <Link to="/about" className={`text-white font-semibold ${pathname === '/about' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>About</Link>
                 </nav>
                 <div className="sm:hidden">
                     <button type="button" onClick={toggleMenu} className="text-gray-500 hover:text-white focus:outline-none focus:text-white">
@@ -64,6 +65,7 @@ const Navbar = () => {
                     <Link to="/" className={`text-white font-semibold ${pathname === '/' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Home</Link>
                     <Link to="/mapView" className={`text-white font-semibold ${pathname === '/mapView' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Map</Link>
                     <Link to="/upload" className={`text-white font-semibold ${pathname === '/upload' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>Upload</Link>
+                    <Link to="/about" className={`text-white font-semibold ${pathname === '/about' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded block`} onClick={closeMenu}>About</Link>
                     <div className="px-2 pt-2 pb-4">
                         {isLoggedIn ? (
                             <button className="text-white font-semibold py-2 px-4 bg-gray-900 rounded hover:bg-gray-700 w-full" onClick={handleLogout}>Logout</button>

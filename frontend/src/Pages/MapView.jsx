@@ -45,7 +45,7 @@ const MapView = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: "100px", textAlign:"center" }}>
+    <div className="mt-24 text-center">
       <select onChange={(e) => setSelectedData(e.target.value)}>
         <option value="">Select a point</option>
         {myData.map((_, i) => (
@@ -53,9 +53,9 @@ const MapView = () => {
         ))}
       </select>
 
-      <div style={{ width: "90%", height: "500px",margin:"20px auto" }}>
+      <div className="w-11/12 h-96 mx-auto my-4">
         {initialCoordinates && (
-          <MapContainer center={initialCoordinates} zoom={7} style={{ height: '500px', width: '100%', borderRadius: '10px' }}>
+          <MapContainer center={initialCoordinates} zoom={7} className="h-full w-full rounded">
             <TileLayer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             {mapPoints.length > 0 && (
               <Polygon positions={mapPoints} />

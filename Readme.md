@@ -1,6 +1,6 @@
 # GeoSpatial Data Management and Visualization Application
 
-This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, draw custom shapes on the map, save those shapes, and edit them.
+This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, draw custom shapes on the map.
 
 ## Table of Contents
 

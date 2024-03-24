@@ -5,6 +5,7 @@ import Login from '../Pages/Login'
 import Register from '../Pages/Register'
 import MapView from '../Pages/MapView'
 import Upload from '../Pages/Upload'
+import About from '../Pages/About'
 
 const AllRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AllRoutes = () => {
         <Route path="/register" element={<Register/>} />
         <Route path='/mapView' element = {<MapView/>}></Route>
         <Route path='/upload' element = {<Upload/>}></Route>
+        <Route path='/About' element = {<About/>}></Route>
     </Routes>
   )
 }
