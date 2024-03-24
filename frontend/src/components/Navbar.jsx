@@ -25,10 +25,9 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-gray-800 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
-            <div className="flex items-center justify-between w-full  px-4 py-3 sm:p-0 ">
-               
-               <div className="mr-8">
+        <header className="bg-gray-800 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 sticky top-0 z-50">
+            <div className="flex items-center justify-between w-full px-4 py-3 sm:p-0">
+                <div className="mr-8">
                     <img className="h-12" src={logo} alt="logo" />
                 </div>
                 <nav className={`hidden sm:flex space-x-8 items-center flex-grow`}>
@@ -36,7 +35,6 @@ const Navbar = () => {
                     <Link to="/upload" className={`text-white font-semibold ${pathname === '/upload' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>Upload</Link>
                     <Link to="/mapView" className={`text-white font-semibold ${pathname === '/mapView' ? 'bg-gray-900' : 'hover:bg-gray-900'} py-2 px-4 rounded`} onClick={closeMenu}>Map</Link>
                 </nav>
-               
                 <div className="sm:hidden">
                     <button type="button" onClick={toggleMenu} className="text-gray-500 hover:text-white focus:outline-none focus:text-white">
                         <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
