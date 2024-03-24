@@ -8,7 +8,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-var jwtKey = []byte("Skyserve")
+var jwtKey = []byte("geoData")
 
 type Claims struct {
 	Email string `json:"email"`
