@@ -3,7 +3,7 @@ import axios from 'axios';
 import { MapContainer, TileLayer, Polygon } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const MapView = () => {
+const Map = () => {
   const [initialCoordinates, setInitialCoordinates] = useState(null);
   const [mapPoints, setMapPoints] = useState([]);
   const [myData, setMyData] = useState([]);
@@ -46,6 +46,7 @@ const MapView = () => {
 
   return (
     <div className="mt-24 text-center">
+      <h1 className="text-2xl text-center font-bold">Select a point to see the mapview.</h1><br /><br />
       <select onChange={(e) => setSelectedData(e.target.value)}>
         <option value="">Select a point</option>
         {myData.map((_, i) => (
@@ -67,4 +68,4 @@ const MapView = () => {
   );
 };
 
-export default MapView;
+export default Map;

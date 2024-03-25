@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
 import Login from '../Pages/Login'
 import Register from '../Pages/Register'
-import MapView from '../Pages/MapView'
+import Map from '../Pages/Map'
 import Upload from '../Pages/Upload'
 import About from '../Pages/About'
 
@@ -13,7 +13,7 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
-        <Route path='/mapView' element = {<MapView/>}></Route>
+        <Route path='/mapView' element = {<Map/>}></Route>
         <Route path='/upload' element = {<Upload/>}></Route>
         <Route path='/About' element = {<About/>}></Route>
     </Routes>
