@@ -45,10 +45,10 @@ const Upload = () => {
       await axios.post('http://localhost:8080/geodata', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
-        if(!userId){
-            alert("Please Login")
-            return
-        }
+      if(!userId){
+          alert("Please Login")
+          return
+      }
       alert('File uploaded successfully');
       fetchGeoData();
       setFile(null);
@@ -62,7 +62,7 @@ const Upload = () => {
   return (
     <>
       <div className="max-w-xl mx-auto my-24 p-6 bg-gray-300 rounded-lg shadow-md">
-      <h1 className="text-2xl text-center font-bold">Upload a .geojson File</h1><br />
+        <h1 className="text-2xl text-center font-bold">Upload a .geojson File</h1><br />
         <form className="flex flex-col gap-4 text-black mb-8" onSubmit={handleSubmit}>
           <input type="text" placeholder="Title" value={title} onChange={handleTitleChange} />
           <input type="file" accept=".geojson" onChange={handleFileChange} />
@@ -76,10 +76,9 @@ const Upload = () => {
           </tr>
         </thead>
         <tbody>
-          {geoDataList.map((data) => (
-            <tr key={data.id}>
-          <td className="bg-gray-300 text-gray-700 px-4 py-2">{data.title}</td>
-
+          {geoDataList.map((data, index) => (
+            <tr key={index}>
+              <td className="bg-gray-300 text-gray-700 px-4 py-2">{data.title}</td>
             </tr>
           ))}
         </tbody>
