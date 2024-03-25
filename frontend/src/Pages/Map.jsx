@@ -7,15 +7,19 @@ const Map = () => {
   const [initialCoordinates, setInitialCoordinates] = useState(null);
   const [mapPoints, setMapPoints] = useState([]);
   const [myData, setMyData] = useState([]);
-  const [selectedData, setSelectedData] = useState([]);
+  const [selectedData, setSelectedData] = useState(null);
 
   const reverseCoordinates = (arr) => {
-    return [arr[1], arr[0]];
+    if (arr && arr.length >= 2) { // Check if array exists and has at least 2 elements
+      return [arr[1], arr[0]];
+    } else {
+      return null;
+    }
   };
 
   useEffect(() => {
     const selectedCoordinates = myData[selectedData];
-    if (selectedCoordinates) {
+    if (selectedCoordinates && Array.isArray(selectedCoordinates)) { // Check if selectedCoordinates is an array
       const first = reverseCoordinates(selectedCoordinates[0]);
       const map = selectedCoordinates.map((e) => {
         return { location: reverseCoordinates(e) };
