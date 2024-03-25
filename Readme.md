@@ -1,4 +1,4 @@
-# GeoSpatial Data Management and Visualization Application
+# Geo-Data App
 
 This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, draw custom shapes on the map.
 
