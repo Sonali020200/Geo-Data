@@ -38,7 +38,7 @@ const Map = () => {
         const data = response.data
           .filter((e) => e.user_id === userid)
           .map((e) => JSON.parse(e.geometry).coordinates[0]);
-
+        console.log(data);
         setMyData(data);
       } catch (error) {
         console.error('Failed to fetch coordinates:', error);
@@ -53,14 +53,14 @@ const Map = () => {
       <h1 className="text-2xl text-center font-bold">Select a point to see the mapview.</h1><br /><br />
       <select onChange={(e) => setSelectedData(e.target.value)}>
         <option value="">Select a point</option>
-        {myData.map((_, i) => (
-          <option key={i} value={i}>{i + 1}</option>
+        {myData.map((el, i) => (
+          <option key={i} value={el[i]}>{i + 1}</option>
         ))}
       </select>
 
       <div className="w-11/12 h-96 mx-auto my-4">
-        {initialCoordinates && (
-          <MapContainer center={initialCoordinates} zoom={7} className="h-full w-full rounded">
+        { (
+          <MapContainer center={[0,0]} zoom={7} className="h-full w-full rounded">
             <TileLayer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             {mapPoints.length > 0 && (
               <Polygon positions={mapPoints} />
