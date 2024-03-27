@@ -60,7 +60,7 @@ const Map = () => {
 
       <div className="w-11/12 h-96 mx-auto my-4">
         { (
-          <MapContainer center={[0,0]} zoom={7} className="h-full w-full rounded">
+          <MapContainer center={[50,50]} zoom={7} className="h-full w-full rounded">
             <TileLayer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             {mapPoints.length > 0 && (
               <Polygon positions={mapPoints} />

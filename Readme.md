@@ -1,9 +1,20 @@
 # Geo-Data App
 
-This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, draw custom shapes on the map.
+This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, and draw custom shapes on the map.
+
+## Preview
+
+![Preview Image 1](./frontend/src/images/Home_page.png)
+
+![Preview Image 2](./frontend/src/images/register_page.png)
+
+![Preview Image 3](./frontend/src/images/login_page.png)
+
+![Preview Image 4](./frontend/src/images/upload_page.png)
+
+![Preview Image 5](./frontend/src/images/map_page.png)
 
 ## Table of Contents
-
 1. [Technical Overview](#technical-overview)
 2. [Getting Started](#getting-started)
 3. [Backend](#backend)
@@ -34,8 +45,6 @@ To get started with the application, follow these steps:
 5. Install dependencies: `npm install`
 6. Start the frontend server: `npm run dev`
 
-
-
 ## Backend
 
 The backend of the application is developed using the Go programming language. It includes APIs for user authentication, account management, file upload, and shape management. PostgreSQL is used as the database to store user data and geospatial information. 
@@ -47,10 +56,3 @@ The frontend of the application is developed using React. It provides a user-fri
 ## Deployment
 
 live link: https://geo-data-kappa.vercel.app/
-
-
-
-
-
-
-
