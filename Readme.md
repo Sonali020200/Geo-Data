@@ -20,7 +20,7 @@ This is a fullstack web application that allows users to manage and visualize ge
 3. [Backend](#backend)
 4. [Frontend](#frontend)
 5. [Deployment](#deployment)
-6. [Video](#Video_Analysis)
+
 
 ## Technical Overview
 
@@ -58,6 +58,3 @@ The frontend of the application is developed using React. It provides a user-fri
 
 live link: https://geo-data-kappa.vercel.app/
 
-## Video
-
-[![Geo-Data App Demo](https://drive.google.com/file/d/1xKt4dc9_SsVUht7b8enEm7UvBwWHlWqa/view?usp=sharing)](https://drive.google.com/file/d/1xKt4dc9_SsVUht7b8enEm7UvBwWHlWqa/view?usp=sharing)
