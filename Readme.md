@@ -60,4 +60,4 @@ live link: https://geo-data-kappa.vercel.app/
 
 ## Video
 
-[![Geo-Data App Demo](./frontend/src/images/GeoData_video{edited}.mp4)](https://drive.google.com/file/d/1xKt4dc9_SsVUht7b8enEm7UvBwWHlWqa/view?usp=sharing)
+[![Geo-Data App Demo](https://drive.google.com/file/d/1xKt4dc9_SsVUht7b8enEm7UvBwWHlWqa/view?usp=sharing)](https://drive.google.com/file/d/1xKt4dc9_SsVUht7b8enEm7UvBwWHlWqa/view?usp=sharing)
