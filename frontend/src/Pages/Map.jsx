@@ -10,17 +10,16 @@ const Map = () => {
   const [selectedData, setSelectedData] = useState(null);
 
   const reverseCoordinates = (arr) => {
-    if (arr && arr.length >= 2) { 
-      return [arr[1], arr[0]];
-    } else {
-      return null;
-    }
+    return [arr[1], arr[0]];
   };
 
   useEffect(() => {
     const selectedCoordinates = myData[selectedData];
-    if (selectedCoordinates && Array.isArray(selectedCoordinates)) { 
+    console.log(myData);
+    if (selectedCoordinates) { 
+
       const first = reverseCoordinates(selectedCoordinates[0]);
+      console.log(first);
       const map = selectedCoordinates.map((e) => {
         return { location: reverseCoordinates(e) };
       });
@@ -34,6 +33,7 @@ const Map = () => {
     const fetchCoordinates = async () => {
       try {
         const response = await axios.get('http://localhost:8080/geodata/list');
+        console.log(response.data);
         const userid = localStorage.getItem("userId");
         const data = response.data
           .filter((e) => e.user_id === userid)
@@ -54,13 +54,13 @@ const Map = () => {
       <select onChange={(e) => setSelectedData(e.target.value)}>
         <option value="">Select a point</option>
         {myData.map((el, i) => (
-          <option key={i} value={el[i]}>{i + 1}</option>
+          <option key={i} value={i}>{i + 1}</option>
         ))}
       </select>
 
       <div className="w-11/12 h-96 mx-auto my-4">
-        { (
-          <MapContainer center={[50,50]} zoom={7} className="h-full w-full rounded">
+               { initialCoordinates &&  (
+          <MapContainer center={initialCoordinates} zoom={7} className="h-full w-full rounded">
             <TileLayer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             {mapPoints.length > 0 && (
               <Polygon positions={mapPoints} />
