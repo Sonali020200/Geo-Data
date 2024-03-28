@@ -2,6 +2,10 @@
 
 This is a fullstack web application that allows users to manage and visualize geospatial data. Users can create an account, upload GeoJSON or KML files, render these files on a map using React Leaflet, and draw custom shapes on the map.
 
+##Demo Video
+
+https://github.com/Sonali020200/Geo-Data/assets/147674653/0783e3ce-2545-41e2-aaee-7085723c502e
+
 
 ## Preview
 
@@ -16,8 +20,9 @@ This is a fullstack web application that allows users to manage and visualize ge
 
 ![Preview Image 4](./frontend/src/images/upload_page.png)
 
+![Map_page](https://github.com/Sonali020200/Geo-Data/assets/147674653/3202deb2-4c4d-4f0a-beb0-31ff44030ea1)
 
-![Preview Image 5](./frontend/src/images/Map_page.png)
+
 
 ## Table of Contents
 1. [Technical Overview](#technical-overview)
