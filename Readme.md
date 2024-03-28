@@ -34,7 +34,7 @@ https://github.com/Sonali020200/Geo-Data/assets/147674653/0783e3ce-2545-41e2-aae
 
 ## Technical Overview
 
-- **Frontend**: Developed using React.
+- **Frontend**: Developed using ReactJS and Tailwind CSS.
 - **Backend**: Developed using the Go programming language.
 - **Database**: PostgreSQL is used to store user data and geospatial information.
 - **User Authentication**: Implemented using JWT (JSON Web Tokens).
