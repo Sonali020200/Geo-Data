@@ -21,7 +21,7 @@ https://github.com/Sonali020200/Geo-Data/assets/147674653/a45e0e44-d712-457f-854
 ![Preview Image 4](./frontend/src/images/upload_page.png)
 
 
-![Preview Image 5](./frontend/src/images/map_page.png)
+![Preview Image 5](./frontend/src/images/Map_page.png)
 
 ## Table of Contents
 1. [Technical Overview](#technical-overview)
