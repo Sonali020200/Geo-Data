@@ -37,7 +37,7 @@ const Register = () => {
             <div>
               <input 
                 type="text" 
-                placeholder="Fullname" 
+                placeholder="Enter your name..." 
                 name="fullname" 
                 value={formData.fullname}
                 onChange={(e) => setFormData({ ...formData, fullname: e.target.value })}
@@ -71,7 +71,7 @@ const Register = () => {
               <button type="submit" className="w-full bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Register</button>
             </div>
           </form>
-          <p className="mt-4 text-left text-gray-600 text-sm">Already have an account? <Link className='text-blue-500' to="/login">Login here</Link></p>
+          <p className="mt-4 text-left text-red-600 text-sm">Already have an account? <Link className='text-blue-500' to="/login">Login here</Link></p>
         </div>
       </div>
     </div>

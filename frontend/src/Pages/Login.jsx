@@ -13,7 +13,7 @@ const Login = () => {
       const response = await axios.post('http://localhost:8080/login', { email, password });
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('userId', response.data.userId);
-      alert("Logged in successfully. Welcome back!");
+      alert("Login successfully!");
       navigate('/');
     } catch (error) {
       alert("Please try again!");
@@ -56,7 +56,7 @@ const Login = () => {
               <button type="submit" className="w-full bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
             </div>
           </form>
-          <p className="mt-4 text-left text-gray-600 text-sm">Not an existing user? <Link className='text-blue-500' to="/register">Register here</Link></p>
+          <p className="mt-4 text-left text-red-600 text-sm">Not an existing user? <Link className='text-blue-500' to="/register">Register here</Link></p>
         </div>
       </div>
     </div>
