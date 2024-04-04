@@ -47,7 +47,7 @@ https://github.com/Sonali020200/Geo-Data/assets/147674653/0783e3ce-2545-41e2-aae
 
 To get started with the application, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/Sonali020200/Geo-Data.git`
 2. Navigate to the backend directory: `cd backend`
 3. Set up the backend environment and database: 
     `go run main.go`
